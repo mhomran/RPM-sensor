@@ -28,7 +28,8 @@ void init_Timer1(void){
 }
 
 ISR(TIMER1_OVF_vect){
-  overflows++;
+  lcd.setCursor(0,1);
+  lcd.print("                    ");
 }
 
 ISR(TIMER1_CAPT_vect){
