@@ -6,7 +6,7 @@
  */ 
 #include <LiquidCrystal.h>
 
-LiquidCrystal lcd(A1, A0, 2, 3, 4, 5);
+LiquidCrystal lcd(2,3, 4, 5, 6, 7);
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -48,8 +48,8 @@ ISR(TIMER1_CAPT_vect){
 
 int main(void)
 {
-  DDRD = 0b00111100;
-  DDRC |= 1 << PINC0 | 1 << PINC1;
+  pinMode(8,INPUT);
+  DDRD = 0b00111111;
   
   // set up the LCD's number of columns and rows: 
   lcd.begin(16, 2);
@@ -76,7 +76,6 @@ while (1)
 }
 }
 }
-
 
 
 
