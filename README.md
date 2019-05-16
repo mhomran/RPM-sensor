@@ -7,5 +7,7 @@ This system is made to measure the speed of a wheel of a vehicle and the RPM of 
 - 104 code ceramic capacitor
 - Arduino Nano
 - 7414 HEX schmitt trigger IC
+- 16x2 LCD
+- 9 volt battery
 
 This version is used to measure the RPM of an engine in an international competition (shell eco marathon asia 2019). The project worked correctly during the whole competition. 
